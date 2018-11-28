@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Mango Girls Co.</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link href="https://fonts.googleapis.com/css?family=Barlow" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+
+		<style>
+
+
+
+		.mainNav {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				background-color: white;
+				position: fixed;
+				top: 0;
+				width: 100%;
+				z-index: 100;
+				text-align: center;
+				list-style: none;
+			}
+
+			.mainNav a{
+			
+				color: #3d3d3d;
+				padding-left: 0px 50px 0px 50px;
+				text-decoration: none;
+				font-family: 'Open Sans Condensed', sans-serif;
+				font-size: 20px;
+				display: inline-block
+
+			}
+
+			.mainNav a:hover {
+				background-color: hotpink;
+			}
+
+			.mainNav .icon{
+				float: none;
+				display: none;
+			}
+
+
+
+			@media screen and (max-width: 600px) {
+				.mainNav a {display: none;}
+				.mainNav a.icon {
+					float: right;
+					display: block;
+				}
+			}
+
+			@media screen and (max-width: 600px) {
+				.mainNav.responsive {position: relative;}
+				.mainNav.responsive .icon {
+					position: absolute;
+					right: 0;
+					top: 0;
+				}
+
+				.mainNav.responsive a {
+					float: right;
+					display: block;
+					text-align: center;
+				}
+			}
+
+
+			#logopic{
+				height:100px;
+				width:100px;
+			}
+
+			#logo{
+				width:100px;
+			}
+
+			@media screen and (max-width: 600px) {
+				#logo{
+					justify-content: left;
+					align-items: left;
+
+				}
+			}
+
+			#mainbody{
+				z-index: 50;
+				position: absolute;
+				width: 100%;
+				height: 300px;
+				margin-top: 150px;
+				background-color: lightgray;
+			}
+
+			#maintop{
+				z-index: 100;
+				position: absolute;
+				margin-top: 120px;
+				margin-left: 150px;
+			}
+
+			#homepageimage{
+				height: 4in;
+				width: 3in;
+			}
+
+			.left{
+				padding-right: 100px;
+				padding-left: 100px;
+
+			}
+
+			.right{
+				padding-right: 100px;
+				padding-left: 100px;
+			}
+
+			#shop{
+				z-index: 150;
+				position: absolute;
+				margin-top: 120px;
+				margin-left: 600px;
+				height: 4in;
+				width: 4in;
+
+			}
+
+			
+			
+		</style>
+	</head>
+	
+
+	<body>
+		
+		<nav class="mainNav" id="responsiveNav">
+			<a class="left" href="#"><h2>Shop</h2></a>
+			<a class="left" href="#"><h2>About</h2></a>
+			<div id="logo"> <img id="logopic" src="circle.jpg" alt="logo"> </div>
+			<a class="right" href="#"><h2>Contact</h2></a>
+			<a class="right" href="#"><h2>Social</h2></a>
+		<a href="javascript:void(0)"; style="font-size: 20px;" class="icon" onclick="myFunction()">
+			&#9776;</a>
+			
+		</nav>
+
+		<div id="mainbody">
+			
+		</div>
+
+		<div id="maintop">
+			<img id="homepageimage" src="homepageimage.jpg" alt="logo">
+		</div>
+
+		<div id="shop">
+			<img id="shopnow" src="shop.png" alt=shop>
+		</div>
+
+<script>
+function myFunction() {
+var x = document.getElementById("responsiveNav");
+if (x.className === "mainNav") {
+x.className += " responsive";
+} else {
+x.className = "topnav";
+}
+}
+</script>
+
+	</body>
+</html>
