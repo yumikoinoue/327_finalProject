@@ -82,7 +82,72 @@
 					align-items: left;
 
 				}
-			}
+			}<!DOCTYPE html>
+<html>
+	<head>
+		<title>Mango Girls Co.</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href="css/index.css" rel="stylesheet">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link href="https://fonts.googleapis.com/css?family=Barlow" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+	</head>
+	
+
+<body>
+		
+	<section>
+		<nav class="mainNav" id="responsiveNav">
+			<a href="#"><h2>Shop</h2></a>
+			<a href="#"><h2>About</h2></a>
+			<div id="logo"> <img id="logopic" src="img/logopic.png" alt="logo"> </div>
+			<a href="#"><h2>Contact</h2></a>
+			<a href="#"><h2>Social</h2></a>
+		<a href="javascript:void(0)"; style="font-size: 20px;" class="icon" onclick="myFunction()">
+			&#9776;</a>
+		</nav>
+	</section>
+
+		<div id="mainbody">
+		</div>
+
+		<div id="maintop">
+			<img id="homepageimage" src="img/homepageimage.jpg" alt="logo">
+		</div>
+
+		<div id="shop">
+			<img id="shopnow" src="img/shop.png" alt=shop>
+		</div>
+
+	<main>
+		<article class="column1">
+			<p>Column One</p>
+		</article>
+
+		<article class="column2">
+			<p>Column Two</p>
+		</article>
+
+		<article class="column3">
+			<p>Column Three</p>
+		</article>
+	</main>
+
+<script>
+function myFunction() {
+var x = document.getElementById("responsiveNav");
+if (x.className === "mainNav") {
+x.className += " responsive";
+} else {
+x.className = "mainNav";
+}
+}
+</script>
+
+</body>
+</html>
+
+
 
 			#mainbody{
 				z-index: 50;
